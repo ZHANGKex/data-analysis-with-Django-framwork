@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<a href="{% url 'home' %}" class="list-group-item list-group-item-action">Back to Home</a>
+<h1 class="text-center text-primary mt-4 mb-3">Missing Value Report</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Column</th>
+                    <th>Missing Values</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for column_name, missing_value in missing_values.items %}
+                    <tr>
+                        <td>{{ column_name }}</td>
+                        <td>{{ missing_value }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+{% endblock %}

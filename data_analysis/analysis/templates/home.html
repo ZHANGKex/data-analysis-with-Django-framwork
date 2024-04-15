@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-3">
+    <h1 class="text-center text-primary mt-4 mb-3">Welcome to the Stock Analysis Dashboard</h1>
+    <p>Select an option below to view data:</p>
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'upload' %}" class="btn btn-primary btn-block">Upload Data</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'first_views' %}" class="btn btn-primary btn-block">View First Rows</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'description' %}" class="btn btn-primary btn-block">Data Description</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'missing_value' %}" class="btn btn-primary btn-block">Missing Values</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'open-prices' %}" class="btn btn-primary btn-block">Open Prices</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'distribution-opening-prices' %}" class="btn btn-primary btn-block">Distribution of Opening Prices</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'close-prices' %}" class="btn btn-primary btn-block">Close Prices</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'distribution-closing-prices' %}" class="btn btn-primary btn-block">Distribution of Closing Prices</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'low-prices' %}" class="btn btn-primary btn-block">Low Prices</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'high-prices' %}" class="btn btn-primary btn-block">High Prices</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'stock-prices' %}" class="btn btn-primary btn-block">Stock Prices</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'rolling-stats' %}" class="btn btn-primary btn-block">Rolling Statistics</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'pairplot' %}" class="btn btn-primary btn-block">Pairplot Analysis</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'correlation-matrix' %}" class="btn btn-primary btn-block">Correlation Matrix</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'candlestick' %}" class="btn btn-primary btn-block">Candlestick</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'plot_technical_indicators' %}" class="btn btn-primary btn-block">Plot Technical Indicators</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'monthly-trends' %}" class="btn btn-primary btn-block">Monthly Trends</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'acf-pacf' %}" class="btn btn-primary btn-block">ACF and PACF</a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a href="{% url 'event-analysis' %}" class="btn btn-primary btn-block">Event Analysis</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

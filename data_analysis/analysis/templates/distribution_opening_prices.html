@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<a href="{% url 'home' %}" class="list-group-item list-group-item-action">Back to Home</a>
+<h2 class="text-center text-primary mt-4 mb-3">Distribution of Tesla Stock Opening Prices</h2>
+{{ graph_html|safe }}
+{% endblock %}
